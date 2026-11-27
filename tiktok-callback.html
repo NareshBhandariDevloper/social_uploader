@@ -1,0 +1,13 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Returning to Social Uploader…</title>
+<body style="font-family:sans-serif;text-align:center;margin-top:20vh">
+<p id="m">Returning to Social Uploader…</p>
+<script>
+  location.replace("http://127.0.0.1:53683/callback/" + location.search);
+  setTimeout(function () {
+    document.getElementById("m").textContent =
+      "If nothing happens, make sure Social Uploader is open and waiting for sign-in, then try again.";
+  }, 4000);
+</script>
+</body>
